@@ -78,7 +78,6 @@ class CupertinoTypeAheadFormField<T> extends FormField<String> {
           'This feature was deprecated after Flutter v1.19.0.')
           bool autovalidate: false,
       bool enabled: true,
-      AutovalidateMode autovalidateMode,
       FormFieldSetter<String> onSaved,
       FormFieldValidator<String> validator,
       ErrorBuilder errorBuilder,
@@ -117,7 +116,6 @@ class CupertinoTypeAheadFormField<T> extends FormField<String> {
                 ? textFieldConfiguration.controller.text
                 : (initialValue ?? ''),
             enabled: enabled,
-            autovalidateMode: autovalidateMode,
             builder: (FormFieldState<String> field) {
               final _CupertinoTypeAheadFormFieldState state = field;
 
